@@ -1,0 +1,56 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             }
+     </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="80" rows="20" readonly> 
+  
+<!DOCTYPE html>
+ <head>
+ <title> proste obliczenia</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:green;font-size:31px;">
+ <script language="JavaScript">
+var d1_hus=prompt("d1=","");
+var g1_hus=prompt("g1=","");
+var d2_hus=prompt("d2=","");
+var g2_hus=prompt("g2=","");
+var mnozenie_hus;
+var a_hus=parseFloat(d1_hus);
+var b_hus=parseFloat(d2_hus);
+var c_hus=parseFloat(g1_hus);
+var d_hus=parseFloat(g2_hus);
+ if(a_hus>b_hus&&d_hus>c_hus)
+ {
+    mnozenie_hus=(86400*a_hus-86400*b_hus)+(c_hus*3600-d_hus*3600);
+    document.write("różnica sekund miedzy dniami "+a_hus+" a "+b_hus+" wynosi "+mnozenie_hus+"<br>");
+ }
+ else
+ {
+    if(a_hus<b_hus&&d_hus<c_hus);
+    {    
+    mnozenie_hus=(86400*b_hus-86400*a_hus)+(d_hus*3600-c_hus*3600);
+    document.write("różnica sekund miedzy dniami "+a_hus+" a "+b_hus+" wynosi "+mnozenie_hus+"<br>");
+    }
+ }
+ 
+ 
+ </script>
+</div>
+</body>
+</html>
+           </textarea> 
+</form> 
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+<script type="text/javascript"> 
+</script> 
+</body> 
+</html> 
