@@ -1,0 +1,46 @@
+<html>
+<head>
+ <script language="JavaScript">
+function pole_hushcha(a_hus,b_hus)
+{
+ x=parseFloat(x_hus);
+ d=parseFloat(d_hus);
+ pole=x*d;
+ document.getElementsByName('pole')[0].value=pole.toFixed(2); /* na dokument */
+ alert("pole="+pole.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="pole="+pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function dlugosc_hushcha(a_hus,b_hus)
+{
+ a=parseFloat(a_hus);
+ b=parseFloat(b_hus)
+ obwod=2*a+2*b;
+ document.getElementsByName('obwod')[0].value=obwod.toFixed(2);
+ alert("obwód="+obwod.toFixed(2)+" cm");
+ pokaz2.innerHTML="obwód="+obwod.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Obliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_hushcha(this.a_hus.value,this.b_hus.value);
+obwod_hushcha(this.a_hus.value,this.b_hus.value);return false">
+ Podaj a=
+ <input size="6" name="a_hus">
+ Podaj b=
+ <input size="6" name="b_hus">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ pole=
+ <input size="6" name="pole">
+ obwód=
+ <input size="6" name="obwod">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
