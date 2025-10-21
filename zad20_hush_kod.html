@@ -1,0 +1,33 @@
+zadanie20-KOD<br>
+<textarea name="nazwa" cols="80" rows="55" readonly>
+<!DOCTYPE html>
+ <head>
+ <title> proste obliczenia</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:green;font-size:31px;">
+ <script language="JavaScript">
+    var xa_hus=prompt("xa=","");
+    var ya_hus=prompt("ya=","");
+     var xb_hus=prompt("xb=","");
+    var yb_hus=prompt("yb=","");
+     var xc_hus=prompt("xc=","");
+    var yc_hus=prompt("yc=","");
+ function AB_hus() {   var xa= parseFloat(document.getElementById('xa').value);
+       var ya= parseFloat(document.getElementById('ya').value);
+       var xb= parseFloat(document.getElementById('xb').value);
+       var yb= parseFloat(document.getElementById('yb').value);
+       var wynik=Math.sqrt(Math.pow(xa-xb, 2) + Math.pow(ya-yb,2));
+       document.write("AB="+wynik.toFixed(2))   ;}
+function BC_hus() {       var xb= parseFloat(document.getElementById('xb').value);
+       var yb= parseFloat(document.getElementById('yb').value);
+       var xc= parseFloat(document.getElementById('xc').value);
+       var yc= parseFloat(document.getElementById('yc').value);
+       var wynik=Math.sqrt(Math.pow(xb-xc, 2) + Math.pow(yb-yc,2));
+       document.write("BC="+wynik.toFixed(2));}
+function AC_hus() {}
+</script>
+</body>
+</html>
+</textarea>
