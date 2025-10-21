@@ -1,0 +1,59 @@
+<html> 
+ <head> 
+    <script type="text/javascript"> 
+         function okno_zamknij_siejka() 
+             { 
+                     window.close() 
+             }
+     </script> 
+ </head> 
+<body> 
+    <form> 
+         <textarea name="siejka" cols="80" rows="20" readonly> 
+  <!DOCTYPE html> 
+<head> 
+  <title> Użycie funkcji </title> 
+  <meta charset="utf-8"> 
+</head> 
+<body>
+  <div style="color:navy;font-size:50px;">
+    <script language="JavaScript">
+      var a = parseFloat(prompt("a=", ""));
+      var b = parseFloat(prompt("b=", ""));
+
+      function suma_hus(a, b) {
+        return a + b;
+      }
+      function odejmowanie_hus(a, b) {
+        return a - b;
+      }
+      function mnozenie_hus(a, b) {
+        return a * b;
+      }
+      function od_kwadratu_hus1(a) {
+        return Math.pow(a, 2);
+      }
+      function od_kwadratu_hus2(b) {
+        return Math.pow(b, 2);
+      }
+      function mod_hus(a, b) {
+        return a % b;
+      }
+
+      document.write("suma=" + suma_hus(a, b) + "<br>");
+      document.write("różnica=" + odejmowanie_hus(a, b) + "<br>");
+      document.write("iloczyn=" + mnozenie_hus(a, b) + "<br>");
+      document.write("kwadrat=" + od_kwadratu_hus1(a) + "<br>");
+      document.write("kwadrat=" + od_kwadratu_hus2(b) + "<br>");
+      document.write("reszta z dzielenia=" + mod_hus(a, b) + "<br>");
+    </script>
+  </div>
+</body>
+</html>
+           </textarea> 
+</form> 
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/> 
+<script type="text/javascript"> 
+</script> 
+</body> 
+</html> 
