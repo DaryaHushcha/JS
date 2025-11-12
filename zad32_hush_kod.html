@@ -16,44 +16,53 @@
 
 <body>
   <textarea readonly>
-    <!DOCTYPE html>
-<html lang="en">
+   <!DOCTYPE html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programowanie obiektowe - Autobus</title>
 </head>
 <body>
     <script>
-        function Wazon(kolor,  producent, cena, ocena) {
-            this.producent = producent;
+        function Autobus(ilu_pasazerow, marka, kolor, ocena) {
+            this.ilu_pasazerow = ilu_pasazerow;
+            this.marka = marka;
             this.kolor = kolor;
-            this.cena = cena;
             this.ocena = ocena;
         }
-        Wazon.prototype.wypisz = function ()
- {
- alert(this.producent + ' ' + this.kolor+ ' ' + this.cena+ ' ' + this.ocena);
- };
-        let wazon1 = new Wazon("purpurowy", "Wazon", 69 );
-        let wazon2 = new Wazon("baby-blue", "wazonyjakdzwony", 150);
-        let wazon3 = new Wazon("vantana black", "cool-lookin wazony", 449.99);
-        wazon1.ocena =4.6;
-        wazon2.ocena =4.2;
-        wazon3.ocena =3.9;
 
-        wazon1.wypisz();
-        wazon2.wypisz();
-        wazon3.wypisz();
+        Autobus.prototype.Autobus_wyswietl_hushcha = function() {
+            alert(
+                this.marka + ' ' +
+                this.kolor + ' ' +
+                this.ilu_pasazerow + ' pasażerów ' +
+                this.ocena + ' gwiazdek'
+            );
+        };
 
-        document.write("dostęp do właściwości"+"<br>");
-        document.write("wazon pierwszy"+" "+wazon1.kolor+" "+wazon1.producent+" "+wazon1.cena+"zł "+wazon2.ocena+" gwiazdek/gwiazdki"+"<br>");
-        document.write("wazon drugi"+" "+wazon2.kolor+" "+wazon2.producent+" "+wazon2.cena+"zł "+wazon2.ocena+" gwiazdek/gwiazdki"+"<br>");
-        document.write("wazon trzeci"+" "+wazon3.kolor+" "+wazon3.producent+" "+wazon3.cena+"zł "+wazon3.ocena+" gwiazdek/gwiazdki");
-  </script>
+        let autobus1 = new Autobus(50, "Mercedes", "żółty");
+        let autobus2 = new Autobus(60, "Volvo", "niebieski");
+        let autobus3 = new Autobus(45, "MAN", "czerwony");
+
+        autobus1.ocena = 4.8;
+        autobus2.ocena = 4.3;
+        autobus3.ocena = 3.9;
+
+        autobus1.Autobus_wyswietl_hushcha();
+        autobus2.Autobus_wyswietl_hushcha();
+        autobus3.Autobus_wyswietl_hushcha();
+
+        document.write("Dostęp do właściwości" + "<br>");
+        document.write("Autobus pierwszy: " + autobus1.marka + " " + autobus1.kolor + " " + autobus1.ilu_pasazerow + " pasażerów " + autobus1.ocena + " gwiazdek" + "<br>");
+        document.write("Autobus drugi: " + autobus2.marka + " " + autobus2.kolor + " " + autobus2.ilu_pasazerow + " pasażerów " + autobus2.ocena + " gwiazdek" + "<br>");
+        document.write("Autobus trzeci: " + autobus3.marka + " " + autobus3.kolor + " " + autobus3.ilu_pasazerow + " pasażerów " + autobus3.ocena + " gwiazdek");
+    </script>
 </body>
 <br>
- programowanie obiektowe 
+programowanie obiektowe
 </html>
+
     </textarea>
 </body>
 
