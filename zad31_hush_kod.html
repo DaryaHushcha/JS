@@ -17,58 +17,33 @@
 <body>
   <textarea readonly>
     <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-    }
-
-    .train-info {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 5px;
-      width: 300px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-  <h1>Train object</h1>
-  <div class="train-info">
-    <script type="text/javascript">
-      var train = {
-        productionYear: 2007,
-        wheelsNumber: 8,
-        color: 'Blue',
-
-        train_wyswietli_Mysiv: function () {
-          document.write(
-            'Product year: ' + this.productionYear + '<br>'
-            + 'Wheels number: ' + this.wheelsNumber + '<br>'
-            + 'Color: ' + this.color + '<br>'
-          );
+    <script>
+        function Wazon(_kolor, _cena, _producent) {
+            this.producent = _producent;
+            this.kolor = _kolor;
+            this.cena = _cena;
+            this.Wazon_wyswietl_bucki =function() {
+                document.write(`Wazon kosztuje ${this.producent}zł, wyprodukowany przez ${this.kolor} ,ma kolor ${this.cena}`);
+            }
         }
-      }
 
-      train.train_wyswietli_Mysiv();
+        let wazon1 = new Wazon("Wazonx", "purpurowy",69 );
+        wazon1.Wazon_wyswietl_bucki()
+        
 
-      train.name = "Super Train";
-      train.pokaz_Mysiv = function () { document.write('Train name: ' + this.name); }
-      train.pokaz_Mysiv();
+        wazon1.ocena =4.6;
+wazon1.wazon_pokaz_bucki = function() {
+    document.write(`<br>Wazon jest oceniany na  ${this.ocena} gwiazdek/gwiazdki`);
+}
+wazon1.wazon_pokaz_bucki()
     </script>
-  </div>
 </body>
-
 </html>
     
     </textarea>
