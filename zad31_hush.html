@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiekt Autobus</title>
 </head>
 <body>
     <script>
-        function Wazon(_kolor, _cena, _producent) {
-            this.producent = _producent;
+       
+        function Autobus(_ilu_pasazerow, _marka, _kolor) {
+            this.ilu_pasazerow = _ilu_pasazerow;
+            this.marka = _marka;
             this.kolor = _kolor;
-            this.cena = _cena;
-            this.Wazon_wyswietl_bucki =function() {
-                document.write(`Wazon kosztuje ${this.producent}zł, wyprodukowany przez ${this.kolor} ,ma kolor ${this.cena}`);
+
+         
+            this.Autobus_wyswietl_hushcha = function() {
+                document.write(`Autobus marki ${this.marka} ma kolor ${this.kolor} i może przewozić ${this.ilu_pasazerow} pasażerów.`);
             }
         }
 
-        let wazon1 = new Wazon("Wazonx", "purpurowy",69 );
-        wazon1.Wazon_wyswietl_bucki()
-        
+       
+        let autobus1 = new Autobus(50, "Mercedes", "żółty");
+        autobus1.Autobus_wyswietl_hushcha();
 
-        wazon1.ocena =4.6;
-wazon1.wazon_pokaz_bucki = function() {
-    document.write(`<br>Wazon jest oceniany na  ${this.ocena} gwiazdek/gwiazdki`);
-}
-wazon1.wazon_pokaz_bucki()
+       
+        autobus1.ocena = 4.8;
+
+     
+        autobus1.autobus_pokaz_hushcha = function() {
+            document.write(`<br>Autobus jest oceniany na ${this.ocena} gwiazdek/gwiazdki.`);
+        }
+
+   
+        autobus1.autobus_pokaz_hushcha();
     </script>
 </body>
 </html>
+
