@@ -1,0 +1,38 @@
+<textarea name="nazwa" cols="80" rows="55" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 52</title>
+</head>
+<body>
+    <script>
+        let a_hus = (("Hushcha").length % 4) + 5; //7
+        let b_hus = (("Darya").length % 6) + 20;  //21
+
+        document.write("&nbsp;".repeat(b_hus) + "b" + "<br>");
+
+        for (i_hus = 0; i_hus < b_hus; i_hus++) {
+            document.write("*");
+        }
+
+        document.write("<br>");
+        
+        for (i_hus = 0; i_hus < a_hus - 2; i_hus++) {
+            document.write("*" + "&nbsp; ".repeat(b_hus - 2) + "*");
+
+            if (i_hus == Math.floor(a_hus / 2 - 1)) {
+                document.write("&nbsp; ".repeat(5) + "a");
+            }
+
+            document.write("<br>");
+        }
+
+        for (i_hus = 0; i_hus < b_hus; i_hus++) {
+            document.write("*");
+        }
+    </script>
+</body>
+</html>
+</textarea>
