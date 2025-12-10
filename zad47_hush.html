@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 47</title>
+</head>
+<body>
+    <script>
+        function oblicz_hus() {
+            let a_hus = parseFloat(document.getElementById('a').value);
+            let b_hus = parseFloat(document.getElementById('b').value); 
+            let c_hus = parseFloat(document.getElementById('c').value);
+
+            if (a_hus <= 0 || b_hus <= 0 || c_hus <= 0 || isNaN(a_hus) || isNaN(b_hus) || isNaN(c_hus)) {
+                document.getElementById('wynik').innerHTML = "Spróbuj ponownie";
+                return;
+            }
+
+            if (a_hus + b_hus > c_hus && a_hus + c_hus > b_hus && c_hus + b_hus > a_hus) {
+                document.getElementById('wynik').innerHTML = "Boki " + a_hus + " " + b_hus + " " + c_hus;
+            } else {
+                document.getElementById('wynik').innerHTML = "Z tych boków nie tworzy się trójkąt";
+            }
+        }
+    </script>
+
+    Podaj bok a <input type="number" id="a">
+    Podaj bok b <input type="number" id="b">
+    Podaj bok c <input type="number" id="c">
+
+    <br><br>
+    <input type="button" id="oblicz" value="oblicz" onclick="oblicz_hus()">
+
+    <p id="wynik"></p>
+</body>
+</html>
