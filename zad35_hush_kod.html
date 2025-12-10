@@ -1,0 +1,30 @@
+<textarea name="nazwa" cols="80" rows="55" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+ <script>
+    var x_dana_hus = prompt("podaj liczbę x=", "");
+    var a_dana_hus = parseFloat(x_dana_hus);
+
+    document.write("czytana liczba x=" + a_dana_hus + "<br>");
+
+    if (a_dana_hus > 0) {
+        document.write("czytana liczba jest większa od 0" + "<br>");
+    }
+
+    if (a_dana_hus < 0) {
+        document.write("czytana liczba jest mniejsza od 0" + "<br>");
+    }
+
+    if (a_dana_hus == 0) {
+        document.write("czytana liczba jest równa 0" + "<br>");
+    }
+ </script>
+</div>
+</body>
+</html>
+</textarea>
