@@ -10,22 +10,21 @@
 <body> 
     <form> 
          <textarea name="siejka" cols="80" rows="20" readonly> 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zadanie 56 hushcha</title>
+    <title>Zadanie 56</title>
 </head>
 <body>
     <script>
-        for(i_hus=0;i_hus<=39;i_hus++){
-            let w_hus=i_hus**2+i_hus+41;
+        for (i_hus = 0; i_hus <= 39; i_hus++) {
+            let w_hus = i_hus**2 + i_hus + 41;
 
-            document.write("i="+i_hus+"&nbsp;".repeat(5)+"w=("+w_hus+")<br>");
+            document.write("i=" + i_hus + "&nbsp;".repeat(5) + "w=(" + w_hus + ")<br>");
 
-            if((i_hus+1)%5==0){
+            if ((i_hus + 1) % 5 == 0) {
                 document.write("<br>");
             }
         }
