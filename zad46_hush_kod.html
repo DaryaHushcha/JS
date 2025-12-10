@@ -1,0 +1,27 @@
+<textarea name="nazwa" cols="80" rows="55" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Sprawdzenie danych Hushcha</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+        <script>
+            do {
+                var liczba1 = prompt("wysokość=", "");
+                var h_hus = parseFloat(liczba1);
+            } while (h_hus <= 0);
+
+            do {
+                var liczba1 = prompt("podstawę=", "");
+                var a_hus = parseFloat(liczba1);
+            } while (!(a_hus > 0));
+
+            var Pole = a_hus * h_hus / 2;
+            document.write("Pole=" + Pole.toFixed(2) + " cm^2" + "<br>");
+        </script>
+    </div>
+</body>
+</html>
+</textarea>
