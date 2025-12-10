@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 57</title>
+</head>
+<body>
+    <script>
+        let koniec_petli_hus = 7 + 15;
+        for (i_hus = 7; i_hus <= koniec_petli_hus; i_hus++) {
+            let pierw_2_hus = Math.sqrt(i_hus);
+            let pierw_4_hus = Math.sqrt(pierw_2_hus);
+
+            document.write(
+                "i=" + i_hus + "&nbsp;".repeat(5) +
+                "pierw_2(" + i_hus + ")=" + pierw_2_hus.toFixed(2) +
+                "&nbsp;".repeat(5) +
+                "pierw_4(" + i_hus + ")=" + pierw_4_hus.toFixed(2) + "<br>"
+            );
+        
+            if (i_hus % 3 == 0) {
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>
