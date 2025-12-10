@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zadanie 39</title>
 </head>
 <body>
-    <input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_hus()" /> 
-  <script> 
-    function fun_hus() { 
-      var x_hus = prompt("Podaj kolor", ""); 
-        if(x_hus == 1 || x_hus.toLowerCase() == "1") { 
-  document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); } 
-        else if(x_hus == 2 || x_hus.toLowerCase() == "red") { 
-  document.write('<h6 style="podaj kolor;">wczytałeś kolor :</h6><br />'); 
-  } 
-  } 
- </script> 
+
+    <h1 style="color: green;">MENU</h1> <br><br>
+    <h3 style="color: red;">1-CZERWONY</h3>
+    <h3 style="color: blue;">2-NIEBIESKI</h3>
+    <input type="button" name="hushcha" value="Oblicz" onclick="fun_hus()" /> 
+    <script> 
+        function fun_hus() { 
+            var x_hus = prompt("Podaj kolor", ""); 
+            if (x_hus == 1 || x_hus.toLowerCase() == "czerwony") { 
+                document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); 
+            } else if (x_hus == 2 || x_hus.toLowerCase() == "niebieski") { 
+                document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); 
+            } else {
+                document.write("<h6>brak koloru</h6>");
+            } 
+        } 
+    </script>
 </body>
 </html>
